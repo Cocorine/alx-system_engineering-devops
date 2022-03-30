@@ -1,4 +1,2 @@
-#!/bin/bash
 ALX System Engineering DevOps
-DevOps training repo
-sitory
+DevOps training repository
