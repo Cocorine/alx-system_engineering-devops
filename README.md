@@ -1,3 +1,3 @@
-# ALX System Engineering DevOps
+# ALX System Engineering DevOps repository
 ###
-DevOps training repository
+DevOps training readme file
