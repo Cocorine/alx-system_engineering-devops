@@ -1,2 +1,1 @@
-#!/bin/bash
-First commit
+DevOps training Workspace 
