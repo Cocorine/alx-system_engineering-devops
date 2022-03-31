@@ -7,18 +7,18 @@ DevOps training readme file
 Shell basics commands
 
 ### 0x01. Shell, permissions
-Shell basics commands
+Shell permissions commands
 
-#### man or help:
+####
 
-chmod
-sudo
-su
-chown
-chgrp
-id
-groups
-whoami
-adduser
-useradd
-addgroup
+  ° chmod
+  ° sudo
+  ° su
+  ° chown
+  ° chgrp
+  ° id
+  ° groups
+  ° whoami
+  ° adduser
+  ° useradd
+  ° addgroup
