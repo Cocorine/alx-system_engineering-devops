@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown -R unknown:unknown .
+sudo chown -R vincent:staff .
