@@ -1,17 +1,30 @@
 
-# Shell basis
-Workspace initialization
+# Shell permissions
+DevOps shell permissions workspace
 
-## About Bash
+## About Bash permissions commands
 
-### Display the contents list of your current directory.
-pwd
+### Script that switches the current user to the user betty.
+```
+su betty
+```
+### Script that prints the effective username of the current user.
+```
+whoiam
+```
 
-### Changes the working directory to the user’s home directory.
-source ./bashcr
+### Script that prints all the groups the current user is part of.
+```
+groups
+```
+### Script that changes the owner of the file hello to the user betty.
+```
+chown betty hello
+```
 
-### Display current directory contents in a long format.
-ls -l
+### Script that creates an empty file called hello.
+```
+touch hello
+```
 
-### Display current directory contents, including hidden files (starting with .). Use the long format.
-ls -lnR
+### Script that adds execute permission to the owner of the file hello.
