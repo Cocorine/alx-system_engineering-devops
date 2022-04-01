@@ -36,7 +36,9 @@ or
 
 ###
 #### Script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
-> chmod u+x, g+x, o+r hello
+> chmod ug+x,o+r hello
+####### Or
+> chmod u+x,g+x,o+r hello
 
 ###
 #### Script that adds execution permission to the owner, the group owner and the other users, to the file hello.
