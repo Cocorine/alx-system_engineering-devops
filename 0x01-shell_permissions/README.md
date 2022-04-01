@@ -11,6 +11,8 @@ DevOps shell permissions workspace
 > su betty 
 or
 > sudo su betty
+###
+![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/0-iam_betty.png)
 
 ### 
 #### Script that prints the effective username of the current user.
