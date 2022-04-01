@@ -7,11 +7,14 @@ DevOps shell permissions workspace
 
 ### 
 #### Script that switches the current user to the user betty.
-> su betty
+> adduser betty
+> su betty 
+or
+> sudo su betty
 
 ### 
 #### Script that prints the effective username of the current user.
-> whoiam
+> whoami
 
 ### 
 #### Script that prints all the groups the current user is part of.
@@ -20,6 +23,8 @@ DevOps shell permissions workspace
 ### 
 #### Script that changes the owner of the file hello to the user betty.
 > chown betty hello
+or
+> sudo chown betty hello
 
 ### 
 #### Script that creates an empty file called hello.
