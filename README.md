@@ -11,14 +11,14 @@ Shell permissions commands
 
 ####
 
-  ° chmod
-  ° sudo
-  ° su
-  ° chown
-  ° chgrp
-  ° id
-  ° groups
-  ° whoami
-  ° adduser
-  ° useradd
-  ° addgroup
+  - chmod
+  - sudo
+  - su
+  - chown
+  - chgrp
+  - id
+  - groups
+  - whoami
+  - adduser
+  - useradd
+  - addgroup
