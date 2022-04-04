@@ -151,25 +151,25 @@ DevOps shell permissions workspace
 ##Advanced tasks
 
 ### 
-#### Script that displays all users and their home directories, sorted by users.
-> telnet towel.blinkenlights.nl
+#### Command that finds all empty files and directories in the current directory and all sub-directories.
+> find . -empty -printf "%f\n"
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-if_only.png)
+![Empty casks make the most noise](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/100-empty_casks.png)
 
 ### 
 #### Script that displays all users and their home directories, sorted by users.
-> telnet towel.blinkenlights.nl
+> find . -name "*.gif" -type f -printf "%f\n" | rev | cut -d. -f2- | rev | LC_ALL=C sort -f
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-if_only.png)
+![A gif is worth ten thousand words](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/101-gifs.png)
 
 ### 
-#### Script that displays all users and their home directories, sorted by users.
+#### Script that decodes acrostics that use the first letter of each line.
 > telnet towel.blinkenlights.nl
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-if_only.png)
+![Acrostic](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-acrostic.png)
 
 ### 
-#### Script that displays all users and their home directories, sorted by users.
+#### Script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 > telnet towel.blinkenlights.nl
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-if_only.png)
+![The biggest fan](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/103-the_biggest_fan.png)
