@@ -164,12 +164,12 @@ DevOps shell permissions workspace
 
 ### 
 #### Script that decodes acrostics that use the first letter of each line.
-> telnet towel.blinkenlights.nl
+> echo $(cut -c1 | tr -d " \n")
 ###
 ![Acrostic](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-acrostic.png)
 
 ### 
 #### Script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
-> telnet towel.blinkenlights.nl
+> tail -n +2 | sort | cut -f1 | uniq -c | sort -g -r | head -11 | tr -s " " | cut -d" " -f3
 ###
 ![The biggest fan](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/103-the_biggest_fan.png)
