@@ -1,0 +1,16 @@
+total 60
+drwxr-xr-x 2 unknown unknown 4096 avril  4 15:18 .
+drwxrwxr-x 7 unknown unknown 4096 avril  4 12:45 ..
+-rwxr-xr-x 1 unknown unknown   32 avril  4 13:43 0-hello_world
+-rwxr-xr-x 1 unknown unknown   29 avril  4 13:47 1-confused_smiley
+-rwxr-xr-x 1 unknown unknown   29 avril  4 13:57 2-hellofile
+-rwxr-xr-x 1 unknown unknown   40 avril  4 14:01 3-twofiles
+-rwxr-xr-x 1 unknown unknown   36 avril  4 14:04 4-lastlines
+-rwxr-xr-x 1 unknown unknown   36 avril  4 14:06 5-firstlines
+-rwxr-xr-x 1 unknown unknown   41 avril  4 14:42 6-third_line
+-rwxr-xr-x 1 unknown unknown   86 avril  4 15:13 7-file
+-rwxr-xr-x 1 unknown unknown   37 avril  4 15:17 8-cwd_state
+-rw-rw-r-- 1 unknown unknown   12 avril  4 15:15 \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
+-rw-rw-r-- 1 unknown unknown  801 avril  4 14:33 icata
+-rw-rw-r-- 1 unknown unknown    0 avril  4 15:18 ls_cwd_content
+-rwxrwxr-x 1 unknown unknown 6984 avril  4 12:57 README.md
