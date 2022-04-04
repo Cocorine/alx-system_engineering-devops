@@ -7,152 +7,146 @@ DevOps shell permissions workspace
 
 ### 
 #### Script that prints “Hello, World”, followed by a new line to the standard output.
-> adduser betty
+> echo 'Hello World'
 
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/0-iam_betty.png)
+![Hello World](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/0-hello_world.png)
 
 ### 
 #### Script that displays a confused smiley "(Ôo)'.
-> whoami
+> echo "\"(Ôo)'"
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/1-who_am_i.png)
+![Confused smiley](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/1-confused_smiley.png)
 
 ### 
 #### Display the content of the /etc/passwd file.
-> groups
+> cat /etc/passwd
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/2-groups.png)
+![Let's display a file](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/2-hellofile.png)
 
 ### 
 #### Display the content of /etc/passwd and /etc/hosts
-> chown betty hello
-###### Or
-> sudo chown betty hello
+> cat /etc/passwd /etc/hosts
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/3-new_owner.png)
+![What about 2?](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/3-twofiles1.png)
+![What about 2?](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/3-twofiles.png)
 
 ### 
 #### Display the last 10 lines of /etc/passwd
-> touch hello
+> tail -n 10 /etc/passwd
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/4-empty.png)
+![Last lines of a file](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/4-lastlines.png)
 
 ### 
 #### Display the first 10 lines of /etc/passwd
-> chmod u+x hello
+> head -n 10 /etc/passwd
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/5-execute.png)
+![I'd prefer the first ones actually](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/5-firstlines.png)
 
 ###
 #### Script that displays the third line of the file iacta.
-> chmod ug+x,o+r hello
-###### Or
-> chmod u+x,g+x,o+r hello
+> head -n 3 iacta | tail -n 1
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/6-multiple_permissions.png)
+![Line #2](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/6-third_line.png)
 
 ###
 #### Shell script that creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
-> chmod +x hello
-###### Or
-> chmod a+x hello
+> echo "Best School" > '\*\\'\''"Holberton School"\'\''\\*$\?\*\*\*\*\*:)'
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/7-everybody.png)
+![It is a good file that cuts iron without making a noise](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/7-file.png)
 
 ###
 #### Script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
-> chmod 007 hello
-###### Or
-> chmod -rwx,o+rwx hello
-###### Or
-> chmod a-rwx,o+rwx hello
+> ls -la > ls_cwd_content
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/8-James_Bond.png)
+![Save current state of directory](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/8-cwd_state.png)
 
 ###
 #### Script that duplicates the last line of the file iacta
-> chmod chmod 753 hello
+> tail -1 iacta >> iacta
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/9-John_Doe.png)
+![Duplicate last line](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/9-duplicate_last_line.png)
 
 ###
 #### Script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
-> chmod --reference=olleh hello
+> find -name "*.js" -type f -delete
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/10-mirror_permissions.png)
+![No more javascript](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/10-no_more_js1.png)
+![No more javascript](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/10-no_more_js2.png)
 
 ###
 #### Script that counts the number of directories and sub-directories in the current directory.
-> chmod -R ugo+x .
+> find -mindepth 1 -type d | wc -l
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/11-directories_permissions.png)
+![Don't just count your directories, make your directories count](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/11-directories.png)
 
 ###
 #### Script that displays the 10 newest files in the current directory.
-> mkdir -m 751 my_dir
+> ls -t | head -10
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/12-directory_permissions.png)
-
-###
-#### Script that changes the group owner to school for the file hello.
-> chgrp school hello
-###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/13-change_group.png)
+![What’s new](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/12-newest_files.png)
 
 ###
 #### Script that takes a list of words as input and prints only words that appear exactly once.
-> sudo chown -R vincent:staff .
+> sort | uniq -u
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/100-change_owner_and_group.png)
+![Being unique is better than being perfect](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/13-unique.png)
 
 ###
 #### Display lines containing the pattern “root” from the file /etc/passwd
-> chown -h vincent:staff _hello
+> grep root /etc/passwd
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/101-symbolic_link_permissions.png)
+![It must be in that file](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/14-findthatword.png)
 
 ### 
 #### Display the number of lines that contain the pattern “bin” in the file /etc/passwd
-> sudo chown --from=guillaume betty hello
+> grep bin /etc/passwd | wc -l
+### Or
+> grep -c bin /etc/passwd
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![Count that word](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/15-countthatword.png)
 
 ### 
 #### Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
-> telnet towel.blinkenlights.nl
+> grep root /etc/passwd --after-context=3
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![What's next?](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/16-whatsnext.png)
 
 ### 
 #### Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
-> telnet towel.blinkenlights.nl
+> grep -v bin /etc/passwd
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![I hate bins](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/17-hidethisword.png)
+
+### 
+#### Display all lines of the file /etc/ssh/sshd_config starting with a letter.
+> grep '^[[:alpha:]]' /etc/ssh/sshd_config
+###
+![Letters only please](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/18-letteronly.png)
 
 ### 
 #### Replace all characters A and c from input to Z and e respectively.
-> telnet towel.blinkenlights.nl
+> tr A Z | tr c e
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![A to Z](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/19-AZ.png)
 
 ### 
 #### Script that removes all letters c and C from input.
-> telnet towel.blinkenlights.nl
+> tr -d C | tr -d c
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![LWithout C, you would live in hiago](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/20-hiago.png)
 
 ### 
 #### Script that reverse its input.
-> telnet towel.blinkenlights.nl
+> rev
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![esreveR](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/21-reverse.png)
 
 ### 
 #### Script that displays all users and their home directories, sorted by users.
-> telnet towel.blinkenlights.nl
+> cut -d : -f 1,6 /etc/passwd | sort
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![DJ Cut Killer](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/22-users_and_homes.png)
 
 ##Advanced tasks
 
@@ -160,22 +154,22 @@ DevOps shell permissions workspace
 #### Script that displays all users and their home directories, sorted by users.
 > telnet towel.blinkenlights.nl
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-if_only.png)
 
 ### 
 #### Script that displays all users and their home directories, sorted by users.
 > telnet towel.blinkenlights.nl
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-if_only.png)
 
 ### 
 #### Script that displays all users and their home directories, sorted by users.
 > telnet towel.blinkenlights.nl
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-if_only.png)
 
 ### 
 #### Script that displays all users and their home directories, sorted by users.
 > telnet towel.blinkenlights.nl
 ###
-![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/permissions/102-if_only.png)
+![My name is Betty](https://github.com/Cocorine/alx-system_engineering-devops/blob/main/resources/redirections/102-if_only.png)
